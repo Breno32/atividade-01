@@ -1,0 +1,47 @@
+<div class="content">
+    <div class="content-box">
+        <h3>Cadastrar Vagas</h3>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">ID</label>
+                        <input type="text" class="form-control" name="id" [(ngModel)]="vaga.id">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control" name="nome" [(ngModel)]="vaga.nome">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">Foto</label>
+                        <input type="text" class="form-control" name="foto" [(ngModel)]="vaga.foto">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">Salário</label>
+                        <input type="text" class="form-control" name="salario" [(ngModel)]="vaga.salario">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">Descrição</label>
+                        <input type="text" class="form-control" name="descricao" [(ngModel)]="vaga.descricao">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" (click)="cadastrar()">Cadastrar Vaga</button>
+            <button type="button" class="btn btn-primary" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
+            <button type="button" class="btn btn-primary" (click)="excluir(vaga.id)">Excluir Vaga</button>
+        </form>
+    </div>
+</div>
